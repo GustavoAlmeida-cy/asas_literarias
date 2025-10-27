@@ -16,8 +16,8 @@ export default function BookPage() {
     totalCopies: 1,
     donorName: "Gustavo Almeida",
     donorUf: "SP",
-    whatsapp: "55119940028922",
-    phoneNumber: "+55 (11) 99400-2892",
+    whatsapp: "5511948080918",
+    phoneNumber: "+55 (11) 94808-0918",
     coverUrls: [
       "/books/guenon/guenon_1.jpg",
       "/books/guenon/guenon_2.webp",
@@ -38,7 +38,7 @@ export default function BookPage() {
 
   return (
     <main className="min-h-screen w-full bg-[var(--color-hero-bg-2)] dark:bg-[var(--color-dark-bg)] p-4 sm:p-6 lg:p-12">
-      <div className="max-w-6xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-6 sm:p-10 flex flex-col lg:flex-row gap-8">
+      <div className="max-w-6xl mx-auto bg-[var(--color-hero-bg-1)] rounded-2xl shadow-xl p-6 sm:p-10 flex flex-col lg:flex-row gap-8">
         {/* Seção de imagens */}
         <div className="flex flex-col-reverse sm:flex-row lg:flex-row gap-4 w-full lg:w-auto justify-center items-center">
           {/* Miniaturas */}

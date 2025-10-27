@@ -99,7 +99,7 @@ export default function Page() {
           placeholder="Buscar por título, autor ou doador..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full pl-12 pr-4 py-3 text-base rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition bg-white"
+          className="bg-[var(--color-hero-bg-2)] w-full pl-12 pr-4 py-3 text-base rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
         />
       </div>
 
