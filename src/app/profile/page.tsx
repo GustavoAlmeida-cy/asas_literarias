@@ -31,7 +31,7 @@ export default function Page() {
       title: "20th Century Boys",
       author: "Naoki Urasawa",
       condition: "Novo",
-      cover: "/books/20th Century Boys.jpg",
+      cover: "/books/20th_Century_Boys.jpg",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export default function Page() {
       title: "Industrial Society and Its Future",
       author: "Ted Kaczynski",
       condition: "Danificado",
-      cover: "/books/Industrial Society.jpg",
+      cover: "/books/Industrial_Society.jpg",
     },
   ];
 
