@@ -3,7 +3,6 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 
-// @ts-expect-error: allow side-effect CSS import without type declarations
 import "./globals.css";
 
 import { ScrollTopButton } from "@/components/misc/scroll-top-btn";
