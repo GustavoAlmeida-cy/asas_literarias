@@ -1,4 +1,4 @@
-# 🎓 Study Project
+# 🎓 Projeto Asas Literárias
 
 [![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-20232a?logo=react&logoColor=61dafb)](https://react.dev/)
