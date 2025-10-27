@@ -77,7 +77,7 @@ Contribuições são bem-vindas! Sugestões de funcionalidades ou melhorias no s
 
 ## 🌐 Demonstração
 
-[Acesse o site em produção](https://study-project-pi.vercel.app) 🔗
+[Acesse o site em produção](https://asas-literarias.vercel.app) 🔗
 
 ![Demonstração geral da plataforma](./public/demos/demo.png)
 

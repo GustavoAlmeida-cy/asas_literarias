@@ -37,7 +37,7 @@ export const Footer = () => {
           no&nbsp;
           <Link
             className="hover:opacity-80 transition-opacity font-bold"
-            href="https://github.com/GustavoAlmeida-cy/"
+            href="https://github.com/GustavoAlmeida-cy/asas_literarias"
             target="_blank"
             rel="noopener noreferrer"
           >
