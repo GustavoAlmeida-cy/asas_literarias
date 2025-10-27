@@ -10,28 +10,22 @@ const {
 
 const imagekit = new ImageKit({ publicKey, privateKey, urlEndpoint });
 
-export async function GET() {
-  const data = imagekit.getAuthenticationParameters();
-
-  // Criar resposta com CORS
-  return NextResponse.json(data, {
-    status: 200,
-    headers: {
-      "Access-Control-Allow-Origin": "*", // ou seu domínio específico
-      "Access-Control-Allow-Methods": "GET,OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
-  });
+// Função helper para adicionar CORS
+function withCORS(response: NextResponse) {
+  response.headers.set("Access-Control-Allow-Origin", "*"); // ou seu domínio específico
+  response.headers.set("Access-Control-Allow-Methods", "GET,OPTIONS");
+  response.headers.set("Access-Control-Allow-Headers", "Content-Type");
+  return response;
 }
 
-// Para lidar com preflight requests (OPTIONS)
+// Endpoint GET
+export async function GET() {
+  const data = imagekit.getAuthenticationParameters();
+  const res = NextResponse.json(data);
+  return withCORS(res);
+}
+
+// Endpoint OPTIONS (preflight)
 export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 204,
-    headers: {
-      "Access-Control-Allow-Origin": "*", // ou seu domínio específico
-      "Access-Control-Allow-Methods": "GET,OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
-  });
+  return withCORS(new NextResponse(null, { status: 204 }));
 }
